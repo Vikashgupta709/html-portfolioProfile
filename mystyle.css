@@ -1,15 +1,49 @@
-body{
-    background-color:red;
+.container{
+    background-color: #e9e729;
+    border-radius:150px 0px 55px 0px ;
 }
-.name{
-    float:right;
+.container>hr{
+    margin: 0;
+}
+.profile{
+    text-align: right;
+    padding-right: 25px;
+    padding-top: 25px;
+}
+
+#edusec{
+    background-color: #5a570b;
+}
+.container>section>div>h4{
+    text-align: left; 
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.container>section>div>#list{
+    display: flex;
+    padding-left: 25px;
+}
+section>div>p[draggable=false]{
+    padding-left:25px ;
+   padding-right:25px;
+}
+.education{
+    display: grid;
 }
 #btech{
-    background-color: #000ff;
+    background-color: #98961b;
+    padding-left:25px;
 }
 #diploma{
-    background-color: #3333ff;
+    background-color: #f3f33b;
+    padding-left:25px;
 }
 #highschool{
-    background-color: #6666ff;
+    background-color: #eeec5d;
+    padding-left:25px;
 }
+.container>section>div>#projects{
+    padding-left: 50px;
+    padding-bottom: 25px;
+}
+
