@@ -1,89 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mystyle.css">
-    <title>vikashguptaraj709@gmail.com</title>
+    <title>Vikash Gupta - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        #profile-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        #profile-details p {
+            margin: 0.5rem 0;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 2rem;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        section {
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+        }
+
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skills div {
+            background-color: #007bff;
+            color: #fff;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            border-radius: 4px;
+        }
+
+        #links-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+
+        #links-section a {
+            margin-right: 1rem;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        #links-section a:hover {
+            color: #007bff;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        footer i {
+            font-size: 1.5rem;
+        }
+
+        footer a:hover {
+            color: #007bff;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <div class="container">
+    <header>
+        <h1>Vikash Gupta</h1>
+        <div id="profile-details">
+            <p>Data Enthusiast</p>
+            <p>Greater Noida, India</p>
+            <p>+91-9919302513</p>
+            <p><a href="mailto:vikashguptaraj709@gmail.com">vikashguptaraj709@gmail.com</a></p>
+        </div>
+    </header>
+
+    <main>
         <section>
-            <div class="profile">
-            <h3>Vikash Gupta</h3>
-            <p>B.Tech. - Computer Science & Engineering (Data Science)<br/>
-                Ph: +91-9919302513<br/>
-                Email: vikashguptaraj709@gmail.com<br/>
-                Gautam Buddh Nagar, Uttar Pradesh, India - 201308</p>
+            <h2>Profile</h2>
+            <p>
+                I am deeply fascinated by the transformative power of data and its potential to address real-world challenges. A quick learner, detail-oriented, and effective communicator, I am eager to contribute my skills and grow in a dynamic professional environment.
+            </p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills">
+                <div>Data Analytics</div>
+                <div>Basic Python</div>
+                <div>Data Ethics</div>
+                <div>Data Cleaning</div>
+                <div>Data Calculation</div>
+                <div>Structured Thinking</div>
+                <div>Data Aggregation</div>
+                <div>Data Visualization Presentations</div>
+                <div>SQL</div>
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>Core Java</div>
             </div>
         </section>
-    <hr/>
-        
+
         <section>
-            <div>
-                <h4>BRIEF SUMMARY</h4>
-                <p draggable="false"> I am an engineering student, and my passion for learning knows no bounds. I embrace a multifaceted approach to education, drawing knowledge
-                from diverse sources, remaining open to different perspectives, and continually developing my skills. By immersing myself in this lifelong learning
-                journey, I aspire to become an adaptable, innovative, and socially conscious engineer who can make meaningful contributions to society.
-                </p>
-            </div>
+            <h2>Education</h2>
+            <ul>
+                <li>B-Tech, Galgotias College Of Engineering and Technology, Greater Noida (2021-2024)</li>
+                <li>Diploma, Government Polytechnic, Mahoba (2017-2020)</li>
+                <li>High School, L M I C Janki Nagar Seorahi Kushinagar (2017)</li>
+            </ul>
         </section>
-    
-    <hr/>
-        
+
         <section>
-            <div>
-                <h4>KEY EXPERTISE</h4>
-                <div id="list">
-                <div>
-                    <ul>
-                    <li>Core Java</li>
-                    <li>Basic Python</li>
-                    <li>SQL</li>
-                    <li>Data Analytics</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                    <li>HTML</li>  
-                    <li>CSS</li>
-                    <li>PHP</li>
-                    <li>MySQl</li>
-                    </ul>
-                </div>
-                </div>
-            </div>
+            <h2>Certification</h2>
+            <ul>
+                <li>Google Data Analytics Certificate, Coursera</li>
+                <li>Core Java, ThinkNEXT Technologies</li>
+                <li>Basic Python, Stanford University's Code in Place</li>
+            </ul>
         </section>
-    
-    <hr/>
-        <section id="edusec">
-            <DIV class="education">
-                <h4>EDUCATION</h4>
-                <div id="btech">
-                    <p>Galgotias College of Engineering and Technology 2021 - 2024</p>
-                    <p>B.Tech  |  Computer Science & Engineering  |  Percentage: 70.05 %</p>
-                </div>
-                <div id="diploma">
-                    <p>Government Polytechnic Mahoba, Mahoba 2020</p>
-                    <p>DIPLOMA  |  BTEUP  |  Percentage: 75.95 %</p>
-                </div>
-                <div id="highschool">
-                    <p>L M I C Janki Nagar Seorahi Kushinagar Uttar Pradesh, Kushinagar 2017</p>
-                    <p>10th| BHSIEUP | Percentage: 81.66 %</p>
-                </div>
-            </DIV>
-        </section>
-    <hr/>
+    </main>
+
+    <main>
         <section>
-            <div>
-                <h4>Projects</h4>
-                <ul id="projects">
-                    <li>Shop Portals</li>
-                    <li><a href="https://vikashgupta709.github.io/TinDog/">TinDog</a></li>
-                    <li><a href="https://nextstepgraphy.firebaseapp.com">SagarPhotography</a></li>
-                </ul>
-            </div>
+            <h2>Projects</h2>
+            <ul>
+                <li>Shop_Portal</li>
+                <li>TinDog</li>
+                <li>SagarPhotography</li>
+                <li>Calculator</li>
+                <li>webpaint</li>
+            </ul>
         </section>
-    </div>
+
+        <section>
+            <h2>Languages</h2>
+            <ul>
+                <li>Hindi</li>
+                <li>Bhojpuri</li>
+                <li>English</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <a href="your-github-profile" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="your-linkedin-profile" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="your-tableau-profile" target="_blank"><i class="fab fa-tableau"></i> Tableau</a>
+    </footer>
 </body>
+
 </html>
